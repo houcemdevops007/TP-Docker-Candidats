@@ -1,0 +1,16 @@
+# =============================================================================
+# Exercice 5.1 - Application Node.js - METHODE A : Dockerfile simple
+# Image a produire : tp-docker/nodejs:simple
+# =============================================================================
+
+# TODO 1 : image Node.js 24 standard (non alpine)
+
+# TODO 2 : repertoire de travail /app
+
+# TODO 3 : copier le contexte de build
+
+# TODO 4 : installer les dependances avec npm
+
+# TODO 5 : documenter le port (voir server.js)
+
+# TODO 6 : demarrer l'application via le script "start" de package.json

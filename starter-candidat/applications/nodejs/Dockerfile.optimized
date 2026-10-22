@@ -1,0 +1,23 @@
+# =============================================================================
+# Exercice 5.2 - Application Node.js - METHODE B : Dockerfile optimise
+# Image a produire : tp-docker/nodejs:optimized
+# =============================================================================
+
+# TODO 1 : image Node.js 24 variante Alpine
+
+# TODO 2 : variables d'environnement NODE_ENV, APP_ENV (production) et PORT (3000)
+
+# TODO 3 : repertoire de travail /app
+
+# TODO 4 : copier UNIQUEMENT les deux manifestes npm
+
+# TODO 5 : installation reproductible des SEULES dependances de production,
+#          puis nettoyage du cache npm (dans la meme instruction)
+
+# TODO 6 : copier le code applicatif
+
+# TODO 7 : utiliser l'utilisateur non-root deja fourni par l'image officielle
+
+# TODO 8 : port + HEALTHCHECK sur /health sans curl ni wget (indice : fetch)
+
+# TODO 9 : demarrer DIRECTEMENT avec node (et non via npm) - pourquoi ?

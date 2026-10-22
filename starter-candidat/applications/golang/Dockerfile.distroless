@@ -1,0 +1,17 @@
+# syntax=docker/dockerfile:1
+# =============================================================================
+# Exercice 6.4 - Application Go - METHODE D : multi-stage Distroless
+# Image a produire : tp-docker/golang:distroless
+# =============================================================================
+
+# ---------- Stage 1 : builder ----------
+# TODO 1 : meme stage de compilation statique que la methode C
+
+# ---------- Stage 2 : distroless ----------
+# TODO 2 : image distroless "static" Debian 13, variante non-root (tag impose par l'enonce)
+
+# TODO 3 : copier le binaire (les certificats CA sont-ils necessaires ici ?)
+
+# TODO 4 : ENV, USER explicite (nom fourni par l'image distroless)
+
+# TODO 5 : port, HEALTHCHECK, point d'entree

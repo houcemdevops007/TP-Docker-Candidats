@@ -1,0 +1,11 @@
+# .dockerignore - Application Java (A COMPLETER)
+# Objectif : reduire le contexte de build et ne rien embarquer d'inutile ou de sensible.
+
+# TODO 1 : exclure les metadonnees Git et les fichiers d'IDE
+
+# TODO 2 : exclure le contenu de target/ ... SAUF le JAR final
+#          (indispensable a la methode B). Indice : syntaxe "!motif"
+
+# TODO 3 : exclure les Dockerfiles et le .dockerignore lui-meme
+
+# TODO 4 : exclure les logs, la documentation et tout fichier pouvant contenir un secret

@@ -1,0 +1,23 @@
+# =============================================================================
+# Exercice 3.3 - Application Java - METHODE C : multi-stage build
+# Image a produire : tp-docker/java:multistage
+# =============================================================================
+
+# ---------- Stage 1 : compilation ----------
+# TODO 1 : image Maven 3.9 + JDK 21, stage nomme "builder"
+
+# TODO 2 : repertoire de travail /build
+
+# TODO 3 : copier pom.xml puis le dossier src (deux instructions distinctes)
+
+# TODO 4 : packager l'application (tests ignores : ils sont executes en CI)
+
+
+# ---------- Stage 2 : execution ----------
+# TODO 5 : image JRE 21
+
+# TODO 6 : repertoire de travail /app
+
+# TODO 7 : recuperer UNIQUEMENT le JAR produit par le stage "builder"
+
+# TODO 8 : port + point d'entree en forme exec

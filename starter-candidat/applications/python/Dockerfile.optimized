@@ -1,0 +1,29 @@
+# =============================================================================
+# Exercice 4.2 - Application Python - METHODE B : Dockerfile optimise
+# Image a produire : tp-docker/python:optimized
+# =============================================================================
+
+# TODO 1 : image Python 3.14 variante slim
+
+# TODO 2 : variables d'environnement :
+#   - pas de fichiers .pyc ecrits par Python
+#   - sortie standard non bufferisee (logs immediats)
+#   - pas de cache pip, pas de verification de version de pip
+#   - APP_ENV=production et PORT=5000
+
+# TODO 3 : creer un groupe + utilisateur systeme "app" (UID/GID 10001, sans shell, sans home)
+
+# TODO 4 : repertoire de travail /app
+
+# TODO 5 : copier UNIQUEMENT requirements.txt, puis installer les dependances
+
+# TODO 6 : copier le code applicatif
+
+# TODO 7 : basculer sur l'utilisateur non-root
+
+# TODO 8 : documenter le port
+
+# TODO 9 : HEALTHCHECK sur /health SANS curl (indice : Python est disponible)
+
+# TODO 10 : demarrer avec Gunicorn (bind 0.0.0.0:5000, 2 workers, logs d'acces sur stdout)
+#           + socket de controle desactive (option de Gunicorn 26, voir --help)

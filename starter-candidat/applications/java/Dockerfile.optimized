@@ -1,0 +1,39 @@
+# syntax=docker/dockerfile:1
+# =============================================================================
+# Exercice 3.4 - Application Java - METHODE D : multi-stage optimise
+# Image a produire : tp-docker/java:optimized
+# Le build doit utiliser BuildKit (active par defaut sur Docker Engine >= 23).
+# =============================================================================
+
+# TODO 1 : declarer deux ARG globaux pour les images Maven et JRE (valeurs par defaut imposees)
+
+# ---------- Stage 1 : builder ----------
+# TODO 2 : FROM base sur l'ARG Maven, stage "builder", WORKDIR /build
+
+# TODO 3 : copier pom.xml SEUL, puis telecharger les dependances Maven
+#          avec un cache BuildKit monte sur /root/.m2
+
+# TODO 4 : copier src, puis packager (meme cache monte, tests ignores)
+
+# TODO 5 : extraire le JAR en couches (jarmode "tools", option --layers --launcher)
+#          vers /build/extracted
+
+
+# ---------- Stage 2 : runtime ----------
+# TODO 6 : FROM base sur l'ARG JRE (variante Alpine)
+
+# TODO 7 : labels OCI (dont la version, fournie par un ARG APP_VERSION)
+
+# TODO 8 : creer un groupe et un utilisateur systeme "app" (UID/GID 10001), sans shell
+
+# TODO 9 : WORKDIR /app puis copier les 4 couches extraites, de la moins
+#          volatile a la plus volatile
+
+# TODO 10 : variables d'environnement : APP_ENV, PORT, options JVM adaptees aux
+#           conteneurs (pourcentage de RAM, arret sur OutOfMemoryError)
+
+# TODO 11 : basculer sur l'utilisateur non-root
+
+# TODO 12 : port + HEALTHCHECK interrogeant /health (outil disponible dans Alpine)
+
+# TODO 13 : point d'entree lancant le launcher Spring Boot (pas "java -jar")

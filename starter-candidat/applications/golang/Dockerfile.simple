@@ -1,0 +1,16 @@
+# =============================================================================
+# Exercice 6.1 - Application Go - METHODE A : Dockerfile simple
+# Image a produire : tp-docker/golang:simple
+# =============================================================================
+
+# TODO 1 : image Golang 1.26 complete
+
+# TODO 2 : repertoire de travail /app
+
+# TODO 3 : copier le contexte de build
+
+# TODO 4 : compiler l'application en un binaire nomme "server"
+
+# TODO 5 : documenter le port
+
+# TODO 6 : executer le binaire (forme exec)

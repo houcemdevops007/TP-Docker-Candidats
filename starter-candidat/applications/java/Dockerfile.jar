@@ -1,0 +1,15 @@
+# =============================================================================
+# Exercice 3.2 - Application Java - METHODE B : JAR precompile
+# Image a produire : tp-docker/java:jar
+# Pre-requis : target/app.jar doit avoir ete compile AVANT le docker build.
+# =============================================================================
+
+# TODO 1 : image de base contenant UNIQUEMENT un JRE 21 (pas de JDK, pas de Maven)
+
+# TODO 2 : repertoire de travail /app
+
+# TODO 3 : copier l'artefact target/app.jar dans l'image sous le nom app.jar
+
+# TODO 4 : documenter le port d'ecoute
+
+# TODO 5 : point d'entree en forme exec executant "java -jar" sur le JAR copie

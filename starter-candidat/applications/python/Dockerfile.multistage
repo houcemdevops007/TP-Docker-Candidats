@@ -1,0 +1,27 @@
+# =============================================================================
+# Exercice 4.3 - Application Python - METHODE C : multi-stage build
+# Image a produire : tp-docker/python:multistage
+# =============================================================================
+
+# ---------- Stage 1 : builder ----------
+# TODO 1 : image Python 3.14 slim, stage nomme "builder"
+
+# TODO 2 : desactiver le cache pip
+
+# TODO 3 : creer un environnement virtuel dans /opt/venv et le placer en tete du PATH
+
+# TODO 4 : copier requirements.txt et installer les dependances DANS le venv
+
+
+# ---------- Stage 2 : runtime ----------
+# TODO 5 : meme image de base que le builder (pourquoi est-ce important ?)
+
+# TODO 6 : labels + variables d'environnement (dont le PATH vers le venv)
+
+# TODO 7 : utilisateur systeme non-root (UID/GID 10001)
+
+# TODO 8 : WORKDIR /app, copier le venv depuis le builder puis le code
+
+# TODO 9 : USER, port, HEALTHCHECK
+
+# TODO 10 : demarrage avec Gunicorn

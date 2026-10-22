@@ -1,0 +1,27 @@
+# =============================================================================
+# Exercice 6.2 - Application Go - METHODE B : multi-stage Debian Slim
+# Image a produire : tp-docker/golang:slim
+# =============================================================================
+
+# ---------- Stage 1 : builder ----------
+# TODO 1 : image Golang 1.26 basee sur Debian 13 (trixie), stage "builder"
+
+# TODO 2 : WORKDIR /src, copier go.mod, telecharger les modules
+
+# TODO 3 : copier le code source
+
+# TODO 4 : ARG VERSION (defaut 1.0.0) puis compilation vers /out/server
+#          options : -trimpath, symboles retires (-s -w), injection de main.version
+
+# ---------- Stage 2 : runtime ----------
+# TODO 5 : image Debian 13 slim
+
+# TODO 6 : utilisateur systeme non-root "app" (UID/GID 10001)
+
+# TODO 7 : copier le binaire dans /usr/local/bin/server
+
+# TODO 8 : ENV, USER, port
+
+# TODO 9 : HEALTHCHECK utilisant l'option -healthcheck du binaire (voir main.go)
+
+# TODO 10 : point d'entree

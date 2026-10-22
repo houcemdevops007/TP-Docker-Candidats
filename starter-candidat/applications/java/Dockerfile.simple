@@ -1,0 +1,20 @@
+# =============================================================================
+# Exercice 3.1 - Application Java - METHODE A : Dockerfile simple
+# Image a produire : tp-docker/java:simple
+# Consigne : remplacez chaque bloc TODO par l'instruction Dockerfile adaptee.
+# =============================================================================
+
+# TODO 1 : image de base contenant Maven 3.9 ET un JDK 21 (tag impose par l'enonce)
+
+# TODO 2 (facultatif) : ajouter des labels OCI (title, description, authors)
+
+# TODO 3 : definir /app comme repertoire de travail
+
+# TODO 4 : copier le contexte de build dans l'image
+
+# TODO 5 : compiler, tester et packager l'application avec Maven (mode batch)
+#          -> le JAR produit doit etre target/app.jar
+
+# TODO 6 : documenter le port d'ecoute de l'application
+
+# TODO 7 : commande de demarrage en forme exec (tableau JSON) lancant le JAR

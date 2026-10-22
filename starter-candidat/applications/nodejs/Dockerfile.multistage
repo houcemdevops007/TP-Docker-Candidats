@@ -1,0 +1,21 @@
+# =============================================================================
+# Exercice 5.3 - Application Node.js - METHODE C : multi-stage build
+# Image a produire : tp-docker/nodejs:multistage
+# =============================================================================
+
+# ---------- Stage "deps" ----------
+# TODO 1 : Node 24 Alpine, stage "deps" : installer UNIQUEMENT les dependances de prod
+
+# ---------- Stage "test" (optionnel, bonus) ----------
+# TODO 2 : Node 24 Alpine, stage "test" : installer TOUTES les dependances,
+#          copier server.js + test/, executer npm test
+#          (construit uniquement avec : docker build --target test ...)
+
+# ---------- Stage "runtime" ----------
+# TODO 3 : Node 24 Alpine, labels, variables d'environnement
+
+# TODO 4 : recuperer node_modules depuis le stage "deps"
+
+# TODO 5 : copier package.json et server.js
+
+# TODO 6 : utilisateur non-root, port, HEALTHCHECK, demarrage avec node

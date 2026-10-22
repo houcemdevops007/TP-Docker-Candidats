@@ -1,0 +1,16 @@
+# =============================================================================
+# Exercice 4.1 - Application Python - METHODE A : Dockerfile simple
+# Image a produire : tp-docker/python:simple
+# =============================================================================
+
+# TODO 1 : image Python 3.14 standard (non slim)
+
+# TODO 2 : repertoire de travail /app
+
+# TODO 3 : copier le contexte de build
+
+# TODO 4 : installer les dependances listees dans requirements.txt
+
+# TODO 5 : documenter le port de l'application Flask (voir app.py)
+
+# TODO 6 : demarrer l'application avec l'interpreteur Python (forme exec)

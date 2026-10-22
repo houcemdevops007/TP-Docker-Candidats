@@ -1,0 +1,11 @@
+# .dockerignore - Application Node.js (A COMPLETER)
+
+# TODO 1 : Git et IDE
+
+# TODO 2 : node_modules local et logs npm - pourquoi ne faut-il JAMAIS le copier ?
+
+# TODO 3 : rapports de couverture de tests
+
+# TODO 4 : fichiers Docker
+
+# TODO 5 : fichiers sensibles : .env*, .npmrc (peut contenir un token), cles

@@ -1,0 +1,11 @@
+FROM node:latest
+LABEL maintainer="equipe-dev"
+ENV API_TOKEN=exemple-factice-a-ne-jamais-faire
+WORKDIR /app
+COPY . .
+RUN apt-get update
+RUN apt-get install -y curl vim git build-essential
+RUN npm install
+RUN chmod -R 777 /app
+EXPOSE 3000
+CMD npm start

@@ -1,0 +1,9 @@
+# .dockerignore - Application Go (A COMPLETER)
+
+# TODO 1 : Git et IDE
+
+# TODO 2 : binaires compiles localement (pourquoi sont-ils inutilisables dans l'image ?)
+
+# TODO 3 : fichiers Docker
+
+# TODO 4 : fichiers sensibles et divers

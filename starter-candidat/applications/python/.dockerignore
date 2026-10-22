@@ -1,0 +1,11 @@
+# .dockerignore - Application Python (A COMPLETER)
+
+# TODO 1 : Git et IDE
+
+# TODO 2 : environnements virtuels locaux (.venv, venv, env)
+
+# TODO 3 : caches Python (__pycache__, *.pyc, caches pytest/mypy)
+
+# TODO 4 : fichiers Docker
+
+# TODO 5 : fichiers sensibles (.env, cles, certificats) et divers (logs, docs)

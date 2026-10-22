@@ -1,0 +1,27 @@
+# syntax=docker/dockerfile:1
+# =============================================================================
+# Exercice 6.3 - Application Go - METHODE C : multi-stage scratch
+# Image a produire : tp-docker/golang:scratch
+# =============================================================================
+
+# ---------- Stage 1 : builder ----------
+# TODO 1 : image Golang 1.26 executee sur la plateforme de BUILD ($BUILDPLATFORM)
+
+# TODO 2 : ARG TARGETOS, TARGETARCH (fournis par BuildKit) et VERSION
+
+# TODO 3 : WORKDIR, go.mod, go mod download, copie du code
+
+# TODO 4 : compilation STATIQUE (CGO desactive) pour TARGETOS/TARGETARCH -> /out/server
+
+# ---------- Stage 2 : image vide ----------
+# TODO 5 : partir de l'image vide
+
+# TODO 6 : copier le bundle de certificats CA depuis le builder (pourquoi ?)
+
+# TODO 7 : copier le binaire a la racine (/server)
+
+# TODO 8 : ENV + utilisateur NUMERIQUE non-root (pourquoi pas un nom ?)
+
+# TODO 9 : port + HEALTHCHECK en forme exec (aucun shell disponible)
+
+# TODO 10 : point d'entree
